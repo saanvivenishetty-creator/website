@@ -5,17 +5,24 @@ export const getAsset = (path: string) => {
 };
 
 const siteConfig = {
- personal: {
-  name: 'Saanvi Venishetty',
-  title: 'Economics (H) Undergraduate | Business & Data Analytics',
-  image: getAsset('images/profile.png'),
-  tagline: 'Turning data into economic and business insights.',
-}
-
+  personal: {
+    name: 'Saanvi Venishetty',
+    title: 'Economics (H) Undergraduate | Business & Data Analytics',
+    image: getAsset('images/profile.png'), // Resolves to /profile.png or /base-path/profile.png
+    description: 'Economics (H) undergraduate at Christ University with strong interest in data-driven decision-making, business analytics, and public policy.\n\n' +
+        '\n' +
+        'Hands-on experience through McKinsey Forward Program, EvolSkills, and fintech research internships, working on KPIs, dashboards, MIS reporting, and market analysis.\n\n' +
+        '\n' +
+        'Skilled in Excel, SQL, Python, and financial analysis, with practical exposure to stock market analysis, inflation studies, and business intelligence tools.' +
+        '\n' +
+        'Chandravesh is the author of books “Programming for Machine Learning and Business” and “Machine Learning for Business". He regularly conducts training programs and workshops for professionals and students, focusing on making advanced analytical methods accessible and impactful.',
+    tagline: 'Turning data into economic and business insights.',
+  location: 'Bangalore, India',
+  },
 
   seo: {
-    title: "Dr. Chandravesh Chaudhari - Assistant Professor & AI Researcher",
-    description: 'Official website showcasing Dr. Chandravesh Chaudhari\'s education, research, projects and experience.',
+    title: "Saanvi Venishetty- Economics Student",
+    description: 'Official website showcasing Saanvi Venishetty\'s education, research, projects and experience.',
   },
 
   animatedText: ['AI Researcher', 'Educator', 'Speaker', 'Builder'],
@@ -41,17 +48,37 @@ navigation: [
   ],
 
 
- education: [
-  {
-    institution: 'Christ University, Bangalore',
-    degree: 'B.A. Economics (Honours)',
-    year: '2023–2027',
-    description: [
-      'Coursework: Microeconomics, Macroeconomics, Statistics, Econometrics',
-      'Tools: Excel, Python, SQL, Power BI',
-    ],
-  },
-],
+  education: [
+    {
+      institution: 'Christ University, Bangalore',
+      degree: 'B.A. Economics (Honours)',
+      year: '2023–2027',
+      image: getAsset('images/education/Christ_University.png'),
+      description: [
+        'Coursework: Microeconomics, Macroeconomics, Statistics, Econometrics',
+      ],
+    },
+    {
+      institution: 'Indira Gandhi National Open University',
+      degree: 'Post Graduate Diploma in Computer Applications',
+      year: '2017–2018',
+      image: getAsset('images/education/ignouLogo.png'),
+      description: [
+        'Focused on C programming, systems analysis, web design',
+        'Learned computer organisation, database management, Java programming',
+      ],
+    },
+    {
+      institution: 'Chaudhary Charan Singh University, Meerut',
+      degree: "Masters of Commerce – Finance",
+      year: '2015–2017',
+      image: getAsset('images/education/CCSU-Logo.jpg'),
+      description: [
+        'Studied managerial economics, statistical analysis',
+        'Focus on security analysis, portfolio & financial management',
+      ],
+    },
+  ],
 
 // ✅ Unified MOOC + Certifications Section
 certifications: [
@@ -178,38 +205,25 @@ certifications: [
 
 
   // ✅ Experience section updated
- experience: [
+  experience: [
   {
     title: "Forward Program Participant",
+    cardImage: getAsset("images/experience/Christ_University.png"),
     place: "McKinsey & Company",
     time: "(May 2025 – July 2025)",
     desp: [
       "Worked on structured problem-solving and prioritization exercises",
       "Defined KPIs and execution plans in business simulations",
-      "Practiced data-backed decision-making and stakeholder communication",
     ],
   },
   {
     title: "Business Growth Intern",
+    cardImage: getAsset("images/experience/Christ_University.png"),
     place: "EvolSkills",
     time: "(Apr 2025 – July 2025)",
     desp: [
       "Built Excel dashboards to track program milestones and adoption metrics",
       "Prepared weekly MIS reports on leads, conversions, and engagement",
-      "Identified workflow gaps and reduced response time",
-    ],
-  },
-  {
-    title: "Research Intern",
-    place: "Zeni5 (Student Neobank)",
-    time: "(July 2023 – Aug 2023)",
-    desp: [
-      "Conducted market and product research for fintech SaaS",
-      "Supported go-to-market narratives and investor pitch decks",
-    ],
-  },
-],
-
     ],
   },
 ],
@@ -217,33 +231,81 @@ certifications: [
 
   // ✅ Projects section updated
   projects: [
-  {
-    title: "Tesla Stock Analysis using SQL",
-    description: "Analyzed stock price movements, trading volume, and moving averages using SQL queries.",
+    {
+      title: "Tesla Stock Analysis using SQL",
+      cardImage: getAsset("images/project/Brain-AutoML.png"),
+      description: "Analyzed stock price movements, trading volume, and moving averages using SQL queries.",
+      Githublink: "https://github.com/chandraveshchaudhari/brain-ai",
+    },
+    {
+      title: "Gold Prices vs Inflation Analysis",
+      cardImage: getAsset("images/project/HSFSIframework.png"),
+      description: "Studied relationship between inflation trends and gold prices using Python.",
+      Githublink: "https://github.com/chandraveshchaudhari/hybrid-feature-selection",
+    },
+    {
+      title: "NIFTY 50 Stock Market Dashboard",
+      cardImage: getAsset("images/project/systematic-reviewpy.png"),
+      description: "Built an interactive Power BI dashboard to visualize index performance.",
+      Githublink: "https://github.com/chandraveshchaudhari/systematic-reviewpy",
+    },
+  ],
+
+
+  research: [
+    {
+      title: "Stock Market Prediction Techniques Using Artificial Intelligence: A Systematic Review",
+      authors: "Chandravesh Chaudhari, Geetanjali Purswani",
+      conferences: "Congress on Intelligent Systems, Springer Nature Singapore",
+      researchYr: 2022,
+      image: getAsset("/images/research/review_paper.png"),
+      citation: {
+        vancouver:
+          "Chaudhari, C., Purswani, G. (2023). Stock Market Prediction Techniques Using Artificial Intelligence: A Systematic Review. In: Kumar, S., Sharma, H., Balachandran, K., Kim, J.H., Bansal, J.C. (eds) Third Congress on Intelligent Systems. CIS 2022. Lecture Notes in Networks and Systems, vol 608. Springer, Singapore. https://doi.org/10.1007/978-981-19-9225-4_17",
+      },
+      abstract:
+        "This paper systematically reviews the literature related to stock price prediction systems...",
+      link: "https://link.springer.com/chapter/10.1007/978-981-19-9225-4_17", // optional: external link if available
+    },
+    {
+      title: "Hybrid Subset Feature Selection And Importance Framework",
+      authors: "Chandravesh Chaudhari, Geetanjali Purswani",
+      conferences:
+        "2023 IEEE International Conference on Contemporary Computing and Communications (InC4), Bangalore, India, 2023",
+      researchYr: 2023,
+      image: getAsset("/images/research/subset.png"),
+      citation: {
+        vancouver:
+          "C. Chaudhari and G. Purswani, \"Hybrid Subset Feature Selection And Importance Framework,\" 2023 IEEE International Conference on Contemporary Computing and Communications (InC4), Bangalore, India, 2023, pp. 1-6, doi: 10.1109/InC457730.2023.10262828.",
+      },
+      abstract:
+        "Feature selection algorithms are used in high-dimensional data to remove noise...",
+      link: "https://ieeexplore.ieee.org/abstract/document/10262828",
+    },
+  ],
+
+  books: [
+    {
+      title: 'Programming for Machine Learning and Business',
+      description: 'This interactive book is designed to help learners, researchers, and professionals bridge the gap between Python programming, machine learning fundamentals, and real-world business applications.',
+      image: getAsset('images/Book_Cover_programming_for_business.png'), // Resolves to /book2.jpg
+      link: 'https://chandraveshchaudhari.github.io/Programming_for_Business/intro.html',
+    },
+    {
+      title: 'Machine Learning for Business',
+      description: 'Machine Learning for Business is an interactive and practical learning hub that connects business strategy with modern machine learning techniques.',
+      image: getAsset('images/book_cover_machine_learning_for_business.png'), // Resolves to /book1.jpg
+      link: 'https://chandraveshchaudhari.github.io/Machine_Learning_For_Business/intro.html#',
+    },
+  ],
+
+  contact: {
+    email: 'venishettysaanvi@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/saanvi-venishetty',
+    github: 'https://github.com/saanvi-venishetty',
+    googleScholar: 'https://scholar.google.com/citations?authuser=1&user=V78qbA8AAAAJ',
+  orcid: 'https://orcid.org/0000-0003-1053-7541',
   },
-  {
-    title: "Gold Prices vs Inflation Analysis",
-    description: "Studied relationship between inflation trends and gold prices using Python.",
-  },
-  {
-    title: "NIFTY 50 Stock Market Dashboard",
-    description: "Built an interactive Power BI dashboard to visualize index performance.",
-  },
-],
-
-
-  skills: {
-  technical: ["Excel (Advanced)", "SQL", "Basic Python", "Power BI"],
-  analytics: ["Financial Modelling", "Valuation", "Econometrics"],
-  tools: ["Gretl", "PowerPoint", "Word"],
-},
-
-
- contact: {
-  email: 'venishettysaanvi@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/saanvi-venishetty',
-  github: 'https://github.com/saanvi-venishetty',
-},
-
+};
 
 export default siteConfig;
