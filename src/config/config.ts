@@ -10,12 +10,8 @@ const siteConfig = {
     title: 'Economics (H) Undergraduate | Business & Data Analytics',
     image: getAsset('images/profile.png'), // Resolves to /profile.png or /base-path/profile.png
     description: 'Economics (H) undergraduate at Christ University with strong interest in data-driven decision-making, business analytics, and public policy.\n\n' +
-        '\n' +
-        'Hands-on experience through McKinsey Forward Program, EvolSkills, and fintech research internships, working on KPIs, dashboards, MIS reporting, and market analysis.\n\n' +
-        '\n' +
-        'Skilled in Excel, SQL, Python, and financial analysis, with practical exposure to stock market analysis, inflation studies, and business intelligence tools.' +
-        '\n' +
-        'Chandravesh is the author of books “Programming for Machine Learning and Business” and “Machine Learning for Business". He regularly conducts training programs and workshops for professionals and students, focusing on making advanced analytical methods accessible and impactful.',
+  'Hands-on experience through McKinsey Forward Program, EvolSkills, and fintech research internships, working on KPIs, dashboards, MIS reporting, and market analysis.\n\n' +
+  'Skilled in Excel, SQL, Python, and financial analysis, with practical exposure to stock market analysis, inflation studies, and business intelligence tools.',
     tagline: 'Turning data into economic and business insights.',
   location: 'Bangalore, India',
   },
