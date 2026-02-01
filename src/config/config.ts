@@ -297,7 +297,7 @@ certifications: [
 
   contact: {
     email: 'venishettysaanvi@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/saanvi-venishetty',
+    linkedin: 'https://www.linkedin.com/in/chandravesh-chaudhari/',
     github: 'https://github.com/chandraveshchaudhari',
     googleScholar: 'https://scholar.google.com/citations?authuser=1&user=V78qbA8AAAAJ',
   orcid: 'https://orcid.org/0000-0003-1053-7541',
