@@ -6,12 +6,16 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Saanvi Venishetty',
-    title: 'Economics Undergraduate | Aspiring Analyst',
+    name: 'Dr. Chandravesh Chaudhari',
+    title: 'Assistant Professor | Multimodal AI Researcher',
     image: getAsset('images/profile.png'), // Resolves to /profile.png or /base-path/profile.png
-    description: 'Saanvi Venishetty is a Bachelor of Arts (Economics) student at Christ University, Bangalore, with a strong interest in economic analysis, public policy, and financial markets.\n\n' +
-    'Her academic work focuses on applying economic theory and quantitative tools to real-world problems, including monetary policy transmission, market structures, and development economics.\n\n' +
-    'She has hands-on experience with data analysis, field surveys, and applied research through academic projects, service-learning initiatives, and student-led fellowships.',
+    description: 'Chandravesh Chaudhari, Ph.D. is an academic and practitioner working at the intersection of business analytics, machine learning, and technology-driven decision-making. His research and teaching focus on applying data science and emerging technologies to solve complex problems in business, economics, and management.\n' +
+        '\n' +
+        'Chandravesh teaches in the School of Business and Management at Christ University, where he has guided numerous students and professionals in mastering advanced Excel, Python, machine learning, and applied analytics. He is deeply involved in curriculum design, research mentorship, and capacity building for industry-oriented business analytics education.\n' +
+        '\n' +
+        'He earned his Ph.D. from Christ University, holds an Masters in Finance, and has completed specialized certifications in analytics and programming. His academic work emphasizes bridging theoretical concepts with real-world applications, particularly in domains such as financial analytics, business intelligence, and operational optimization.\n' +
+        '\n' +
+        'Chandravesh is the author of books “Programming for Machine Learning and Business” and “Machine Learning for Business". He regularly conducts training programs and workshops for professionals and students, focusing on making advanced analytical methods accessible and impactful.',
     tagline: 'Empowering business through data-driven intelligence.',
   location: 'Bangalore, India',
   },
@@ -296,7 +300,7 @@ certifications: [
   ],
 
   contact: {
-    email: 'venishettysaanvi@gmail.com',
+    email: 'chandraveshchaudhari@gmail.com',
     linkedin: 'https://www.linkedin.com/in/chandravesh-chaudhari/',
     github: 'https://github.com/chandraveshchaudhari',
     googleScholar: 'https://scholar.google.com/citations?authuser=1&user=V78qbA8AAAAJ',
