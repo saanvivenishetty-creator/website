@@ -12,11 +12,10 @@ const siteConfig = {
   tagline: 'Turning data into economic and business insights.',
 }
 
-  },
 
   seo: {
-    title: "Saanvi Venishetty- Economics Student",
-    description: 'Official website showcasing Saanvi Venishetty\'s education, research, projects and experience.',
+    title: "Dr. Chandravesh Chaudhari - Assistant Professor & AI Researcher",
+    description: 'Official website showcasing Dr. Chandravesh Chaudhari\'s education, research, projects and experience.',
   },
 
   animatedText: ['AI Researcher', 'Educator', 'Speaker', 'Builder'],
@@ -31,9 +30,18 @@ navigation: [
   { name: 'Resume', url: '/resume' },
   { name: 'Contact', url: '/contact' },
 ],
+
+  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
+  // Add more entries here as you add more static HTML blog files under public/static_page/
+  blogs: [
+    {
+      title: 'Project Management Mastery',
+      url: getAsset('static_page/project_management_blog.html'),
+    },
   ],
 
-  education: [
+
+ education: [
   {
     institution: 'Christ University, Bangalore',
     degree: 'B.A. Economics (Honours)',
@@ -42,12 +50,8 @@ navigation: [
       'Coursework: Microeconomics, Macroeconomics, Statistics, Econometrics',
       'Tools: Excel, Python, SQL, Power BI',
     ],
-    description: [ 
-  'Economics (H) undergraduate at Christ University with strong interest in data-driven decision-making, business analytics, and public policy.\n\n' +
-  'Hands-on experience through McKinsey Forward Program, EvolSkills, and fintech research internships, working on KPIs, dashboards, MIS reporting, and market analysis.\n\n' +
-  'Skilled in Excel, SQL, Python, and financial analysis, with practical exposure to stock market analysis, inflation studies, and business intelligence tools.',
+  },
 ],
-  
 
 // ✅ Unified MOOC + Certifications Section
 certifications: [
@@ -174,7 +178,7 @@ certifications: [
 
 
   // ✅ Experience section updated
-  experience: [
+ experience: [
   {
     title: "Forward Program Participant",
     place: "McKinsey & Company",
@@ -206,9 +210,13 @@ certifications: [
   },
 ],
 
+    ],
+  },
+],
+
 
   // ✅ Projects section updated
- projects: [
+  projects: [
   {
     title: "Tesla Stock Analysis using SQL",
     description: "Analyzed stock price movements, trading volume, and moving averages using SQL queries.",
@@ -223,19 +231,19 @@ certifications: [
   },
 ],
 
- skills: {
+
+  skills: {
   technical: ["Excel (Advanced)", "SQL", "Basic Python", "Power BI"],
   analytics: ["Financial Modelling", "Valuation", "Econometrics"],
   tools: ["Gretl", "PowerPoint", "Word"],
 },
 
 
-  contact: {
+ contact: {
   email: 'venishettysaanvi@gmail.com',
   linkedin: 'https://www.linkedin.com/in/saanvi-venishetty',
   github: 'https://github.com/saanvi-venishetty',
 },
-  },
-};
+
 
 export default siteConfig;
