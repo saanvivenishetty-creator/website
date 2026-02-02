@@ -6,23 +6,19 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Saanvi',
-    title: 'Assistant Professor | Multimodal AI Researcher',
+    name: 'Saanvi Venishetty',
+    title: 'Economics (H) Undergraduate | Business & Data Analytics',
     image: getAsset('images/profile.png'), // Resolves to /profile.png or /base-path/profile.png
-    description: 'Chandravesh Chaudhari, Ph.D. is an academic and practitioner working at the intersection of business analytics, machine learning, and technology-driven decision-making. His research and teaching focus on applying data science and emerging technologies to solve complex problems in business, economics, and management.\n' +
-        '\n' +
-        'Chandravesh teaches in the School of Business and Management at Christ University, where he has guided numerous students and professionals in mastering advanced Excel, Python, machine learning, and applied analytics. He is deeply involved in curriculum design, research mentorship, and capacity building for industry-oriented business analytics education.\n' +
-        '\n' +
-        'He earned his Ph.D. from Christ University, holds an Masters in Finance, and has completed specialized certifications in analytics and programming. His academic work emphasizes bridging theoretical concepts with real-world applications, particularly in domains such as financial analytics, business intelligence, and operational optimization.\n' +
-        '\n' +
-        'Chandravesh is the author of books “Programming for Machine Learning and Business” and “Machine Learning for Business". He regularly conducts training programs and workshops for professionals and students, focusing on making advanced analytical methods accessible and impactful.',
-    tagline: 'Empowering business through data-driven intelligence.',
+    description: 'Economics (H) undergraduate at Christ University with strong interest in data-driven decision-making, business analytics, and public policy.\n\n' +
+  'Hands-on experience through McKinsey Forward Program, EvolSkills, and fintech research internships, working on KPIs, dashboards, MIS reporting, and market analysis.\n\n' +
+  'Skilled in Excel, SQL, Python, and financial analysis, with practical exposure to stock market analysis, inflation studies, and business intelligence tools.',
+    tagline: 'Turning data into economic and business insights.',
   location: 'Bangalore, India',
   },
 
   seo: {
-    title: "Dr. Chandravesh Chaudhari - Assistant Professor & AI Researcher",
-    description: 'Official website showcasing Dr. Chandravesh Chaudhari\'s education, research, projects and experience.',
+    title: "Saanvi Venishetty - Economics Student",
+    description: 'Official website showcasing Saanvi Venishetty\'s education, research, projects and experience.',
   },
 
   animatedText: ['AI Researcher', 'Educator', 'Speaker', 'Builder'],
@@ -51,8 +47,8 @@ navigation: [
   education: [
     {
       institution: 'Christ University, Bangalore',
-      degree: 'Doctor of Philosophy (PhD)',
-      year: '2020–2025',
+      degree: 'B.A. Economics (Honours)',
+      year: '2024–2027',
       image: getAsset('images/education/Christ_University.png'),
       description: [
         'Stock prediction using multimodal learning (tabular, sentiment, time-series, news video)',
@@ -207,23 +203,25 @@ certifications: [
   // ✅ Experience section updated
   experience: [
   {
-    title: "Assistant Professor",
+    title: "Forward Program Participant",
     cardImage: getAsset("images/experience/Christ_University.png"),
-    place: "Christ University",
-    time: "(May 2025 – Present)",
+    place: "McKinsey & Company",
+    time: "(May 2025 – July 2025)",
     desp: [
-      "Teaching: Predictive Analytics, Financial Forecasting",
-      "Developed automated Excel assignment checker",
+     "Worked on structured problem-solving and prioritization exercises",
+      "Defined KPIs and execution plans in business simulations",
+      "Practiced data-backed decision-making and stakeholder communication",
     ],
   },
   {
-    title: "Teaching Assistant",
+    title: "Business Growth Intern",
     cardImage: getAsset("images/experience/Christ_University.png"),
-    place: "Christ University",
-    time: "(May 2022 – Dec 2024)",
+    place: "EvolSkills",
+    time: "(Apr 2025 – July 2025)",
     desp: [
-      "Courses handled: Computer Applications in Business, Excel, E-commerce",
-      "Guided practical data analysis projects",
+      "Built Excel dashboards to track program milestones and adoption metrics",
+      "Prepared weekly MIS reports on leads, conversions, and engagement",
+      "Identified workflow gaps and reduced response time",
     ],
   },
 ],
@@ -232,21 +230,21 @@ certifications: [
   // ✅ Projects section updated
   projects: [
     {
-      title: "MultiModal Machine Learning AutoML",
+      title: "Tesla Stock Analysis using SQL",
       cardImage: getAsset("images/project/Brain-AutoML.png"),
-      description: "BMMA framework is capable of scaling to multiple modalities such as tabular, sentiment data, time series, and computer vision data...",
+      description: "Analyzed stock price movements, trading volume, and moving averages using SQL queries.",
       Githublink: "https://github.com/chandraveshchaudhari/brain-ai",
     },
     {
-      title: "Hybrid Subset Feature Selection and Importance Framework",
+      title: "Gold Prices vs Inflation Analysis",
       cardImage: getAsset("images/project/HSFSIframework.png"),
-      description: "Implements MultiSURF, ReliefF, SURF, and more for scalable feature selection...",
+      description: "Studied relationship between inflation trends and gold prices using Python.",
       Githublink: "https://github.com/chandraveshchaudhari/hybrid-feature-selection",
     },
     {
-      title: "systematic-reviewpy",
+      title: "NIFTY 50 Stock Market Dashboard",
       cardImage: getAsset("images/project/systematic-reviewpy.png"),
-      description: "An open-source Python framework for systematic review based on PRISMA",
+      description: "Built an interactive Power BI dashboard to visualize index performance.",
       Githublink: "https://github.com/chandraveshchaudhari/systematic-reviewpy",
     },
   ],
@@ -300,9 +298,9 @@ certifications: [
   ],
 
   contact: {
-    email: 'chandraveshchaudhari@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/chandravesh-chaudhari/',
-    github: 'https://github.com/chandraveshchaudhari',
+    email: 'venishettysaanvi@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/saanvi-venishetty',
+    github: 'https://github.com/saanvi-venishetty',
     googleScholar: 'https://scholar.google.com/citations?authuser=1&user=V78qbA8AAAAJ',
   orcid: 'https://orcid.org/0000-0003-1053-7541',
   },
